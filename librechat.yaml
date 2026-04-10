@@ -1,3 +1,5 @@
+jwtSecret: ${JWT_SECRET}
+
 endpoints:
   openrouter:
     apiKey: ${OPENROUTER_KEY}
