@@ -1,5 +1,5 @@
 #!/bin/sh
-cat > /app/librechat.yaml << 'EOF'
+cat > /app/librechat.yaml << EOF
 version: 1.3.8
 
 endpoints:
