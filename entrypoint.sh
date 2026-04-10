@@ -1,4 +1,7 @@
 #!/bin/sh
+echo "DEBUG: OPENROUTER_KEY=$OPENROUTER_KEY"
+echo "DEBUG: All env vars:"
+env | grep -i openrouter
 cat > /app/librechat.yaml << EOF
 version: 1.3.8
 
@@ -16,4 +19,7 @@ endpoints:
       modelDisplayLabel: 'OpenRouter'
       vision: true
 EOF
+echo "DEBUG: Generated librechat.yaml:"
+cat /app/librechat.yaml
 npm run backend
+
