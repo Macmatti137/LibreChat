@@ -52,7 +52,7 @@ RUN \
 EXPOSE 3080
 ENV HOST=0.0.0.0
 ENV CONFIG_PATH=/app/librechat.yaml
-CMD ["npm", "run", "backend"]
+CMD ["sh", "entrypoint.sh"]
 
 # Optional: for client with nginx routing
 # FROM nginx:stable-alpine AS nginx-client
