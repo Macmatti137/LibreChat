@@ -1,0 +1,25 @@
+endpoints:
+  openrouter:
+    apiKey: ${OPENROUTER_KEY}
+    baseURL: "https://openrouter.ai/api/v1"
+    models:
+      default: ["openrouter/auto"]
+      fetch: true
+    titleConvo: true
+    titleModel: "openrouter/auto"
+    summaryModel: "openrouter/auto"
+    modelDisplayLabel: "OpenRouter"
+    vision: true
+
+mongo:
+  uri: ${MONGO_URI}
+
+meilisearch:
+  host: ${MEILI_HOST}
+  apiKey: ${MEILI_MASTER_KEY}
+
+registration:
+  allowRegistration: false
+
+sessionExpiry: 7d
+refreshTokenExpiry: 30d
