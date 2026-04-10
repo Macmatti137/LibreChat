@@ -52,7 +52,6 @@ RUN \
 EXPOSE 3080
 ENV HOST=0.0.0.0
 ENV CONFIG_PATH=/app/librechat.yaml
-ENV JWT_SECRET=${{secret(32)}}
 CMD ["npm", "run", "backend"]
 
 # Optional: for client with nginx routing
