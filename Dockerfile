@@ -40,6 +40,7 @@ RUN \
     npm ci --no-audit
 
 COPY --chown=node:node . .
+COPY librechat.yaml /app/librechat.yaml
 
 RUN \
     # React client build with configurable memory
@@ -50,6 +51,7 @@ RUN \
 # Node API setup
 EXPOSE 3080
 ENV HOST=0.0.0.0
+ENV CONFIG_PATH=/app/librechat.yaml
 CMD ["npm", "run", "backend"]
 
 # Optional: for client with nginx routing
